@@ -23,16 +23,4 @@ export class ActivityService {
     return totalDistance;
   }
 
-  getFirstDate(allActivities: IActivity[]) {
-    let earliestDate = new Date('01/01/9999');
-    for (let i = 0; i < allActivities.length; i++) {
-      const currentDate = allActivities[i].date;
-      if (currentDate < earliestDate) {
-        earliestDate = currentDate;
-      }
-    }
-
-    return earliestDate;
-  }
-
 }
