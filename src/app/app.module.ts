@@ -11,6 +11,7 @@ import { MapComponent } from './map/map.component';
 
 import { ActivityService } from './services/activity.service';
 import { appRoutes } from '../routes';
+import { MapService } from './services/map.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { appRoutes } from '../routes';
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    ActivityService
+    ActivityService,
+    MapService
   ],
   bootstrap: [AppComponent]
 })
